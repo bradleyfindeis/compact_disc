@@ -1,0 +1,8 @@
+<h1>Click to Check Out an Album </h1>
+<hr>
+<%= link_to 'Create a New Album', new_artist_album_path(@artist) %>
+<ul>
+  <% @albums.each do |album| %>
+    <li><%= link_to album.name, [@artist, album] %></li>
+  <% end %>
+</ul>

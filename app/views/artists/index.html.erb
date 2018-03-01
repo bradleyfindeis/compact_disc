@@ -1,0 +1,7 @@
+<h1>Click a Sub To View Content</h1>
+<%= link_to 'Create a New Artist', new_artist_path %>
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= link_to artist.name, artist %></li>
+  <% end %>
+</ul>
